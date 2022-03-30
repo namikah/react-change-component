@@ -4,24 +4,15 @@ import One from "./Components/One";
 import Two from "./Components/Two";
 
 function App() {
-  const [state, setState] = useState();
-
-  useEffect(() => {
-    setState(false);
-  }, []);
-
-  const changeComponent = (state) => {
-    if (state) return <Two />;
-    else return <One />;
-  };
+  const [state, setState] = useState(false);
 
   return (
     <div className="App">
       <header className="App-header">
-        {changeComponent(state)}
+        {state? <One/> : <Two />}
         <button
           className="btn btn-primary"
-          onClick={() => (state ? setState(false) : setState(true))}
+          onClick={() => setState(!state)}
         >
           Click to change
         </button>
