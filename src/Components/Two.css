@@ -4,5 +4,9 @@
     background-size: cover;
 }
 .two-comp{
+    color: darkgreen;
+}
+
+.two-comp span{
     color: red;
 }

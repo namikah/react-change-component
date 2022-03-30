@@ -6,3 +6,6 @@
 .first-comp{
     color: green;
 }
+.first-comp span{
+    color: red;
+}

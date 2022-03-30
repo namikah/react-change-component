@@ -5,7 +5,7 @@ function One() {
   return (
     <>
       <div>
-        <h1 className="first-comp">THIS IS 1ST COMPONENT</h1>
+        <h1 className="first-comp">THIS IS <span>1ST</span> COMPONENT</h1>
       </div>
       <div>
         <img
