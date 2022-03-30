@@ -9,11 +9,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {state? <One/> : <Two />}
-        <button
-          className="btn btn-primary"
-          onClick={() => setState(!state)}
-        >
+        {state ? <One /> : <Two />}
+        <button className="btn btn-primary" onClick={() => setState(!state)}>
           Click to change
         </button>
       </header>
